@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- Mirrored from zetaxity.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Oct 2025 16:47:48 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Resources</title>
+    <link rel="icon" type="image/png" href="assets/image/icon.png" sizes="64x64 32x32 16x16">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <meta property="og:title" content="Minecraft Resources">
+    <meta property="og:description" content="Полезные ресурсы для Minecraft - моды, текстуры, шейдеры">
+    <meta property="og:url" content="index.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Minecraft Resources">
+    <meta name="twitter:description" content="Полезные ресурсы для Minecraft - моды, текстуры, шейдеры">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="assets/image/background.gif" alt="Background" class="background-image">
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; color: #fff; display: flex; align-items: center; justify-content: center; z-index: 9999; font-family: Arial, sans-serif; text-align: center; padding: 20px;">
+            <div>
+                <h1 style="color: #ff6b6b; margin-bottom: 20px;">JavaScript отключен</h1>
+                <p style="font-size: 18px; line-height: 1.5; margin-bottom: 15px;">Для корректной работы сайта необходимо включить JavaScript в вашем браузере.</p>
+                <p style="font-size: 16px; color: #ccc;">Пожалуйста, включите JavaScript и перезагрузите страницу.</p>
+            </div>
+        </div>
+    </noscript>
+    <div class="overlay" id="overlay">
+        <div class="overlay-text" data-translate="click_to_continue">Нажми, чтобы продолжить</div>
+    </div>
+    
+    <div class="dynamic-island" id="dynamicIsland">
+        <div class="dynamic-island-content">
+            <div class="collapsed-track-info">
+                <img src="assets/cover/cover.png" alt="Track" class="collapsed-cover-mini" id="collapsedCoverMini">
+                    <div class="collapsed-track-text">
+                        <div class="collapsed-track-title" id="collapsedTrackTitle">Still Think About You</div>
+                    </div>
+                <div class="collapsed-play-indicator" id="collapsedPlayIndicator"></div>
+            </div>
+            <div class="music-controls">
+                <div class="track-info-mini">
+                    <img src="assets/cover/cover.png" alt="Track" class="track-cover-mini" id="trackCoverMini">
+                    <div class="track-text-mini">
+                        <div class="track-title-mini" id="trackTitleMini">Still Think About You</div>
+                        <div class="track-artist-mini" id="trackArtistMini">A Boogie Wit da Hoodie</div>
+                    </div>
+                </div>
+                <div class="control-buttons">
+                    <button class="control-btn prev-btn" id="dynamicPrevBtn">
+                        <img src="assets/svg/previous.svg" alt="Previous" class="control-icon">
+                    </button>
+                    <button class="control-btn play-pause-btn" id="dynamicPlayPauseBtn">
+                        <img src="assets/svg/play.svg" alt="Play" class="control-icon play-icon">
+                        <img src="assets/svg/stop.svg" alt="Stop" class="control-icon pause-icon">
+                    </button>
+                    <button class="control-btn next-btn" id="dynamicNextBtn">
+                        <img src="assets/svg/next.svg" alt="Next" class="control-icon">
+                    </button>
+                </div>
+                <div class="progress-container-mini">
+                    <div class="progress-bar-mini" id="progressBarMini">
+                        <div class="progress-fill-mini" id="progressFillMini"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-follow hidden-content" id="containerFollow">
+        <div class="container" id="rotating-container">
+            <div class="top-sections">
+                <div class="profile-section">
+                <div class="avatar-container">
+                    <img src="assets/image/avatar.gif" alt="Моя аватарка" class="avatar">
+                    <div class="status-badge" data-translate="status_text">В сети</div>
+                </div>
+                <div class="nickname">unkly</div>
+                <div class="description">Minecraft ресурсы и моды</div>
+
+                <div class="section-title" data-translate="about_me">Обо мне</div>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span class="info-label" data-translate="name">Ник:</span>
+                        <span class="info-value" data-translate="name_value">unkly</span>
+                    </div>
+                    <div class="info-item">
+
+                        <span class="info-label" data-translate="sex">Пол:</span>
+                        <span class="info-value" data-translate="sex_value">Парень</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label" data-translate="hobbies">Возраст:</span>
+                        <span class="info-value" data-translate="hobbies_value">15 лет</span>
+                    </div>
+                </div>
+
+                <div class="section-title" data-translate="languages">Языки</div>
+                <div class="languages-grid">
+                    <div class="language-item clickable" data-lang="ru">
+                        <img src="https://flagcdn.com/w40/ru.png" alt="Русский" class="language-flag">
+                        <span class="language-name">Русский</span>
+                    </div>
+                    <div class="language-item clickable" data-lang="en">
+                        <img src="https://flagcdn.com/w40/us.png" alt="Английский" class="language-flag">
+                        <span class="language-name">English</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <div class="social-buttons">
+                    <a href="https://t.me/unkly" class="social-button" title="Telegram" target="_blank" rel="noopener">
+                        <img src="assets/svg/telegram.svg" alt="Telegram" style="width:18px;height:18px;">
+                    </a>
+                </div>
+
+                <a href="https://t.me/baltikapack" class="text-block promo-block" target="_blank" rel="noopener">
+                    <div class="promo-background" style="background-image: url('assets/gif/felon.gif');"></div>
+                    <div class="promo-content">
+                        <div class="promo-image">
+                            <img src="assets/gif/felon.gif" alt="BaltikaRP">
+                        </div>
+                        <div class="promo-text">
+                            <div class="promo-title">BaltikaRP</div>
+                            <div class="promo-artist" data-translate="felon_promo">Лучшие текстур паки для Minecraft</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://oneton.my" class="text-block promo-block" target="_blank" rel="noopener">
+                    <div class="promo-background" style="background-image: url('assets/image/arta.gif');"></div>
+                    <div class="promo-content">
+                        <div class="promo-image">
+                            <img src="assets/image/arta.gif" alt="OneTon">
+                        </div>
+                        <div class="promo-text">
+                            <div class="promo-title">OneTon</div>
+                            <div class="promo-artist" data-translate="artarious_promo">Мое портфолио и проекты</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://getd.rip/DNENRMZJ" class="text-block promo-block" target="_blank" rel="noopener">
+                    <div class="promo-background" style="background-image: url('assets/image/aezalogo.jpg');"></div>
+                    <div class="promo-content">
+                        <div class="promo-image">
+                            <img src="assets/image/aeza.png" alt="Drip">
+                        </div>
+                        <div class="promo-text">
+                            <div class="promo-title">Drip</div>
+                            <div class="promo-artist" data-translate="aeza_promo">Ghost client для Minecraft</div>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="section-title" data-translate="skills">Увлечения</div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="assets/skill/figma.png" alt="Java" class="skill-icon">
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/skill/cursor.png" alt="Python" class="skill-icon">
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <img src="assets/skill/gemini.webp" alt="Minecraft" class="skill-icon">
+                        <span class="skill-name">Minecraft</span>
+                    </div>             
+                </div>
+
+                <div class="section-title" data-translate="favorite_artists">Контакты</div>
+                <div class="artists-grid">
+                    <a href="https://discordapp.com/users/wuspy/" class="artist-item" target="_blank" rel="noopener">
+                        <div class="artist-name">Discord</div>
+                    </a>
+                    <a href="mailto:wuspy@proton.me" class="artist-item" target="_blank" rel="noopener">
+                        <div class="artist-name">Email</div>
+                    </a>
+                    <a href="https://namemc.com/profile/anomalith" class="artist-item" target="_blank" rel="noopener">
+                        <div class="artist-name">NameMC</div>
+                    </a>
+                    <a href="https://github.com/unkly-meow" class="artist-item" target="_blank" rel="noopener">
+                        <div class="artist-name">GitHub</div>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+            <div class="music-player">
+                <div class="custom-player-modern">
+                    <div class="cover-block" id="coverBlock">
+                        <img src="assets/cover/cover.png" alt="Обложка трека" class="cover-img">
+                        <button class="play-pause" data-translate-title="play_pause">
+                            <img src="assets/svg/play.svg" alt="Play" class="play-icon">
+                            <img src="assets/svg/stop.svg" alt="Stop" class="pause-icon">
+                        </button>
+                        <div class="cover-overlay"></div>
+                    </div>
+                    <div class="track-info">
+                        <div class="player-title" id="playerTitle">Still Think About You</div>
+                        <div class="player-artist" id="playerArtist">A Boogie Wit da Hoodie</div>
+                        <div class="progress-bar-modern-wrap">
+                            <div class="progress-bar-modern">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="time-container">
+                                <span class="player-time-current">0:00</span>
+                                <span class="player-time-duration">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-controls">
+                        <button id="prevTrack" class="track-btn" data-translate-title="prev_track">
+                            <img src="assets/svg/previous.svg" alt="Previous" class="track-icon">
+                        </button>
+                        <button id="nextTrack" class="track-btn" data-translate-title="next_track">
+                            <img src="assets/svg/next.svg" alt="Next" class="track-icon">
+                        </button>
+                    </div>
+                </div>
+                <audio id="audio" src="assets/music/music.mp3"></audio>
+                <div class="track-list-container">
+                    <div class="track-list" id="trackList">
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories-section">
+                <div class="section-title">Категории ресурсов</div>
+                
+                <div class="category-item" data-category="mods">
+                    <div class="category-header">
+                        <h3 class="category-title">Моды</h3>
+                        <div class="hamburger-icon">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="mods-list">
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/minescript" target="_blank" rel="noopener">
+                                    <div class="mod-name">Minescript</div>
+                                    <div class="mod-description">Python scripting for Minecraft</div>
+                                    <div class="mod-version">Fabric/Forge</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/clienthings" target="_blank" rel="noopener">
+                                    <div class="mod-name">ClienThings</div>
+                                    <div class="mod-description">Optimizes the client by reducing the negative effects of ping</div>
+                                    <div class="mod-version">Fabric/Quilt</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/outerglow-feather-lunar" target="_blank" rel="noopener">
+                                    <div class="mod-name">Outer Glow Feather & Lunar</div>
+                                    <div class="mod-description">When you can see someone's outer layer in tab, they have an outline around their head</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/dnp" target="_blank" rel="noopener">
+                                    <div class="mod-name">Damage Number Particles</div>
+                                    <div class="mod-description">Displays floating number particles whenever an entity takes damage or receives healing</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/cactus" target="_blank" rel="noopener">
+                                    <div class="mod-name">Cactus Mod</div>
+                                    <div class="mod-description">Free customizable Mod to improve Minecraft with unique QoL, Redstone Tools, Survival and Mapmaking features</div>
+                                    <div class="mod-version">Fabric/Quilt</div>
+                                </a>
+                                <div class="featured-badge">Featured</div>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/dokkos-hotbar-optimizer" target="_blank" rel="noopener">
+                                    <div class="mod-name">Dokko's Hotbar Optimizer</div>
+                                    <div class="mod-description">Makes hotbar sync around one/two ticks faster, reducing ghost totems</div>
+                                    <div class="mod-version">Fabric/Quilt</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/forcetablistheads" target="_blank" rel="noopener">
+                                    <div class="mod-name">ForceTablistHeads</div>
+                                    <div class="mod-description">Make tablist player heads visible even in offline mode</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/syncrepair" target="_blank" rel="noopener">
+                                    <div class="mod-name">SyncRepair</div>
+                                    <div class="mod-description">Armor HUD allows you to see the durability of your armor and the amount of XP bottles you need to repair it</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/no-delay-optimizer" target="_blank" rel="noopener">
+                                    <div class="mod-name">No Delay Optimizer</div>
+                                    <div class="mod-description">An optimizer that reduces delay from crossbows and ender pearls on high ping servers</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/disablehotbarwrap" target="_blank" rel="noopener">
+                                    <div class="mod-name">DisableHotbarWrap</div>
+                                    <div class="mod-description">Disable the hotbar wrapping around when scrolling</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/projectile-trajectory-preview" target="_blank" rel="noopener">
+                                    <div class="mod-name">Projectile Trajectory Preview</div>
+                                    <div class="mod-description">Display projectile's trajectory and hit point</div>
+                                    <div class="mod-version">Fabric/Quilt</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/nitshas-fastbind" target="_blank" rel="noopener">
+                                    <div class="mod-name">Nitsha's FastBind</div>
+                                    <div class="mod-description">Adds a menu with buttons that can be programmed to execute various in-game commands</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/player-finder" target="_blank" rel="noopener">
+                                    <div class="mod-name">Player Finder</div>
+                                    <div class="mod-description">Displays the nearest player's name, distance, and direction directly on your HUD</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/sillys-crossbow-fix" target="_blank" rel="noopener">
+                                    <div class="mod-name">Silly's Crossbow Fix</div>
+                                    <div class="mod-description">This mod fixes a bug/issue that has existed since 1.15.2 with Crossbows</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/simple-autototem" target="_blank" rel="noopener">
+                                    <div class="mod-name">Simple AutoTotem</div>
+                                    <div class="mod-description">Automatically equips Totem of Undying into your offhand slot when available</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/velvettab" target="_blank" rel="noopener">
+                                    <div class="mod-name">VelvetTab</div>
+                                    <div class="mod-description">Smooth animation of opening and closing the player list</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/perfectheal" target="_blank" rel="noopener">
+                                    <div class="mod-name">PerfectHeal</div>
+                                    <div class="mod-description">PerfectHeal suggests when and in what order to use items for restoring health and saturation</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/csgo-inspects" target="_blank" rel="noopener">
+                                    <div class="mod-name">CS:GO Inspects</div>
+                                    <div class="mod-description">Inspects your items, similar to CS:GO</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/astolforeborn" target="_blank" rel="noopener">
+                                    <div class="mod-name">AstolfoReborn</div>
+                                    <div class="mod-description">Astolfo Client just pvp client with visuals</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/vitalstats" target="_blank" rel="noopener">
+                                    <div class="mod-name">VitalStats</div>
+                                    <div class="mod-description">Displays real-time health indicators above players and mobs with floating health bars or numbers</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                                <div class="featured-badge">Featured</div>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/tab-gamemode-tracker" target="_blank" rel="noopener">
+                                    <div class="mod-name">Tab Gamemode Tracker</div>
+                                    <div class="mod-description">Ever wondered if any of your friends secretly use Creative mode? Now you'll easily know just by press Tab!</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/calculator" target="_blank" rel="noopener">
+                                    <div class="mod-name">Calculator</div>
+                                    <div class="mod-description">A simple mod that lets you calculate math expressions directly in chat using the @ prefix</div>
+                                    <div class="mod-version">Forge/NeoForge</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/coord-faker" target="_blank" rel="noopener">
+                                    <div class="mod-name">Coord Faker</div>
+                                    <div class="mod-description">A client side fabric mod that makes your location confidential by faking your XYZ coordinates</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/spoofer-plus" target="_blank" rel="noopener">
+                                    <div class="mod-name">Spoofer+</div>
+                                    <div class="mod-description">Mod to hide mods & spoof your F3 menu</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/custom-tooltips" target="_blank" rel="noopener">
+                                    <div class="mod-name">Custom Tooltips</div>
+                                    <div class="mod-description">Visual mod that allows you to change Minecraft's hover tooltip position</div>
+                                    <div class="mod-version">Fabric</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="resourcepacks">
+                    <div class="category-header">
+                        <h3 class="category-title">Ресурс паки</h3>
+                        <div class="hamburger-icon">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="mods-list">
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/potato-graphics" target="_blank" rel="noopener">
+                                    <div class="mod-name">Potato Graphics</div>
+                                    <div class="mod-description">Give your game a hilarious low-end makeover! This pack turns every block into a single pixel, dramatically simplifying textures and boosting performance</div>
+                                    <div class="mod-version">8x or lower</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/cpvp-sounds" target="_blank" rel="noopener">
+                                    <div class="mod-name">CPvP Sounds</div>
+                                    <div class="mod-description">PvP Sounds is a lightweight resource pack that replaces the default Minecraft sounds with cleaner and sharper effects optimized for PvP</div>
+                                    <div class="mod-version">Audio</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/sky-v1" target="_blank" rel="noopener">
+                                    <div class="mod-name">Sky v1</div>
+                                    <div class="mod-description">One of most downloaded packs on my discord server</div>
+                                    <div class="mod-version">Combat/Environment</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/black-knight" target="_blank" rel="noopener">
+                                    <div class="mod-name">Black Knight</div>
+                                    <div class="mod-description">One of most downloaded packs on my discord server</div>
+                                    <div class="mod-version">Combat/Environment</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/hellokitty-texture-pack" target="_blank" rel="noopener">
+                                    <div class="mod-name">HelloKitty Texture Pack</div>
+                                    <div class="mod-description">One of my most popular resource packs</div>
+                                    <div class="mod-version">Combat/Environment</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/zipp-cpvp-pack" target="_blank" rel="noopener">
+                                    <div class="mod-name">Zipp CPVP Pack</div>
+                                    <div class="mod-description">Zipp CPVP Pack brings a clean and clear PvP experience. It features short swords, a black UI, low fire, no particles, and a smaller totem pop-up</div>
+                                    <div class="mod-version">Combat/Simplistic</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/luna-edit" target="_blank" rel="noopener">
+                                    <div class="mod-name">Luna Edit</div>
+                                    <div class="mod-description">One of most downloaded packs on my discord server</div>
+                                    <div class="mod-version">Combat/Environment</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/lace" target="_blank" rel="noopener">
+                                    <div class="mod-name">Lace</div>
+                                    <div class="mod-description">One of most popular resouce pack from my discord server</div>
+                                    <div class="mod-version">Combat/Environment</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/black-flamingo" target="_blank" rel="noopener">
+                                    <div class="mod-name">Black Flamingo</div>
+                                    <div class="mod-description">One of most popular packs on my discord server</div>
+                                    <div class="mod-version">Blocks/Combat</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/sukai-v3" target="_blank" rel="noopener">
+                                    <div class="mod-name">Sukai v3</div>
+                                    <div class="mod-description">One of most downloaded packs on my discord server</div>
+                                    <div class="mod-version">Combat/Environment</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/spongebob-pack" target="_blank" rel="noopener">
+                                    <div class="mod-name">SpongeBob Pack</div>
+                                    <div class="mod-description">One of most downloaded packs from my discord server</div>
+                                    <div class="mod-version">Resource Pack</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/pvp-utils" target="_blank" rel="noopener">
+                                    <div class="mod-name">PvP Utils</div>
+                                    <div class="mod-description">A texture pack, which adds Quality of Life Improvements for PvP, while keeping it in a vanilla style</div>
+                                    <div class="mod-version">Combat/Utility</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/pvp-for-cuties" target="_blank" rel="noopener">
+                                    <div class="mod-name">PvP for Cuties</div>
+                                    <div class="mod-description">A PvP Texturepack for Cuties by Cuties :3</div>
+                                    <div class="mod-version">16x</div>
+                                </a>
+                                <div class="featured-badge">Featured</div>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/smooth-pvp" target="_blank" rel="noopener">
+                                    <div class="mod-name">Smooth PVP</div>
+                                    <div class="mod-description">A texture pack with smooth blocks, clean GUI & clean font and more</div>
+                                    <div class="mod-version">Fonts/GUI</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/resourcepack/pink-crystal-pvp-texture-pack" target="_blank" rel="noopener">
+                                    <div class="mod-name">Pink Crystal Pvp Texture Pack</div>
+                                    <div class="mod-description">The Perfect Pink Crystal Pvp Texture Pack</div>
+                                    <div class="mod-version">Resource Pack</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="modpacks">
+                    <div class="category-header">
+                        <h3 class="category-title">Модпаки</h3>
+                        <div class="hamburger-icon">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="mods-list">
+                            <div class="mod-item">
+                                <a href="https://t.me/baltikapack/336" target="_blank" rel="noopener">
+                                    <div class="mod-name">Baltika FPS Boost 1.21.1</div>
+                                    <div class="mod-description">Оптимизированный модпак для максимального FPS с улучшенной производительностью и стабильностью</div>
+                                    <div class="mod-version">1.21.1 Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://t.me/baltikapack/187" target="_blank" rel="noopener">
+                                    <div class="mod-name">Baltika Performance 1.21</div>
+                                    <div class="mod-description">Модпак с оптимизацией производительности, улучшенной графикой и стабильным геймплеем</div>
+                                    <div class="mod-version">1.21 Fabric</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://t.me/baltikapack/258" target="_blank" rel="noopener">
+                                    <div class="mod-name">Baltika Optimized 1.20.1</div>
+                                    <div class="mod-description">Оптимизированный модпак для 1.20.1 с улучшенной производительностью и качественными модами</div>
+                                    <div class="mod-version">1.20.1 Fabric</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="clients">
+                    <div class="category-header">
+                        <h3 class="category-title">Клиенты</h3>
+                        <div class="hamburger-icon">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="mods-list">
+                            <div class="mod-item">
+                                <a href="https://lunarclient.com/" target="_blank" rel="noopener">
+                                <div class="mod-name">Lunar Client</div>
+                                    <div class="mod-description">Оптимизированный клиент с модами и улучшениями для PvP</div>
+                                    <div class="mod-version">1.8 - 1.21.8</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://feathermc.com" target="_blank" rel="noopener">
+                                    <div class="mod-name">Feather Client</div>
+                                    <div class="mod-description">Легкий и быстрый клиент с современным интерфейсом</div>
+                                    <div class="mod-version">1.8 - 1.21.8</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://alpineclient.com/" target="_blank" rel="noopener">
+                                    <div class="mod-name">Alpine Client</div>
+                                    <div class="mod-description">Современный клиент с оптимизацией и качественными модами</div>
+                                    <div class="mod-version">1.8 - 1.21.1</div>
+                                </a>
+                                <div class="featured-badge">Featured</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="visuals">
+                    <div class="category-header">
+                        <h3 class="category-title">Визуалы</h3>
+                        <div class="hamburger-icon">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="mods-list">
+                            <div class="mod-item">
+                                <a href="https://t.me/luminarvisuals" target="_blank" rel="noopener">
+                                    <div class="mod-name">Luminar Visuals</div>
+                                    <div class="mod-description">Продвинутые визуалы для PvP с TargetESP, ChinaHat, WorldParticles, FTHelper и многими другими функциями</div>
+                                    <div class="mod-version">Forge 1.16.5, LabyMod 3</div>
+                                </a>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://modrinth.com/mod/soup-api" target="_blank" rel="noopener">
+                                    <div class="mod-name">SoupApi</div>
+                                    <div class="mod-description">Визуалы для лучших впечатлений от PvP с Target HUD, Hit Particles, Jump Circles, Capes и многими другими функциями</div>
+                                    <div class="mod-version">Fabric 1.20.1-1.21.4</div>
+                                </a>
+                                <div class="featured-badge">Featured</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-item" data-category="cheats">
+                    <div class="category-header">
+                        <h3 class="category-title">Читы</h3>
+                        <div class="hamburger-icon">
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                            <div class="hamburger-line"></div>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <div class="mods-list">
+                            <div class="mod-item">
+                                <a href="https://getd.rip/DNENRMZJ" target="_blank" rel="noopener">
+                                    <div class="mod-name">Drip</div>
+                                    <div class="mod-description">Minecraft's leading Ghost Client provider since 2017. Undetected, screenshare proof, secure and reliable</div>
+                                    <div class="mod-version">Ghost Client</div>
+                                </a>
+                                <div class="featured-badge">Featured</div>
+                            </div>
+                            <div class="mod-item">
+                                <a href="https://rockstar.pub" target="_blank" rel="noopener">
+                                    <div class="mod-name">Rockstar Client</div>
+                                    <div class="mod-description">Продвинутый чит клиент с нейро-аурами, улучшенной оптимизацией и защитой от кряка</div>
+                                    <div class="mod-version">1.21.4</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+<!-- Mirrored from zetaxity.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Oct 2025 16:48:08 GMT -->
+</html>
