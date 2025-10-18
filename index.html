@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<!-- Mirrored from zetaxity.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Oct 2025 16:47:48 GMT -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Resources</title>
-    <link rel="icon" type="image/png" href="assets/image/icon.png" sizes="64x64 32x32 16x16">
+    <link rel="icon" type="image/png" href="assets/image/site_icon.png" sizes="64x64 32x32 16x16">
     <link rel="stylesheet" href="assets/css/index.css">
     <meta property="og:title" content="Minecraft Resources">
     <meta property="og:description" content="Полезные ресурсы для Minecraft - моды, текстуры, шейдеры">
@@ -20,7 +19,7 @@
     <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-    <img src="assets/image/background.gif" alt="Background" class="background-image">
+    <img src="assets/image/site_bg.gif" alt="Background" class="background-image">
     <noscript>
         <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #000; color: #fff; display: flex; align-items: center; justify-content: center; z-index: 9999; font-family: Arial, sans-serif; text-align: center; padding: 20px;">
             <div>
@@ -76,7 +75,7 @@
             <div class="top-sections">
                 <div class="profile-section">
                 <div class="avatar-container">
-                    <img src="assets/image/avatar.gif" alt="Моя аватарка" class="avatar">
+                    <img src="assets/image/profile_pic.gif" alt="Моя аватарка" class="avatar">
                     <div class="status-badge" data-translate="status_text">В сети</div>
                 </div>
                 <div class="nickname">unkly</div>
@@ -120,10 +119,10 @@
                 </div>
 
                 <a href="https://t.me/baltikapack" class="text-block promo-block" target="_blank" rel="noopener">
-                    <div class="promo-background" style="background-image: url('assets/gif/felon.gif');"></div>
+                    <div class="promo-background" style="background-image: url('assets/gif/baltika_promo.gif');"></div>
                     <div class="promo-content">
                         <div class="promo-image">
-                            <img src="assets/gif/felon.gif" alt="BaltikaRP">
+                            <img src="assets/gif/baltika_promo.gif" alt="BaltikaRP">
                         </div>
                         <div class="promo-text">
                             <div class="promo-title">BaltikaRP</div>
@@ -133,10 +132,10 @@
                 </a>
 
                 <a href="https://oneton.my" class="text-block promo-block" target="_blank" rel="noopener">
-                    <div class="promo-background" style="background-image: url('assets/image/arta.gif');"></div>
+                    <div class="promo-background" style="background-image: url('assets/image/portfolio_demo.gif');"></div>
                     <div class="promo-content">
                         <div class="promo-image">
-                            <img src="assets/image/arta.gif" alt="OneTon">
+                            <img src="assets/image/portfolio_demo.gif" alt="OneTon">
                         </div>
                         <div class="promo-text">
                             <div class="promo-title">OneTon</div>
@@ -146,10 +145,10 @@
                 </a>
 
                 <a href="https://getd.rip/DNENRMZJ" class="text-block promo-block" target="_blank" rel="noopener">
-                    <div class="promo-background" style="background-image: url('assets/image/aezalogo.jpg');"></div>
+                    <div class="promo-background" style="background-image: url('assets/image/drip_banner.jpg');"></div>
                     <div class="promo-content">
                         <div class="promo-image">
-                            <img src="assets/image/aeza.png" alt="Drip">
+                            <img src="assets/image/drip_logo.png" alt="Drip">
                         </div>
                         <div class="promo-text">
                             <div class="promo-title">Drip</div>
@@ -685,7 +684,219 @@
 
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/index.js"></script>
+    
+    <!-- Защита от копирования и F12 -->
+    <script>
+        // Защита от F12 и правой кнопки мыши
+        document.addEventListener('keydown', function(e) {
+            // Блокировка F12
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Блокировка Ctrl+Shift+C (DevTools)
+            if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Блокировка Ctrl+U (просмотр кода)
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Блокировка Ctrl+S (сохранение)
+            if (e.ctrlKey && e.key === 's') {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Блокировка Ctrl+A (выделение всего)
+            if (e.ctrlKey && e.key === 'a') {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Блокировка Ctrl+P (печать)
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Защита от правой кнопки мыши
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Защита от выделения текста
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Защита от перетаскивания
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Защита от копирования через Ctrl+C
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Защита от вставки через Ctrl+V
+        document.addEventListener('paste', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Защита от вырезания через Ctrl+X
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        
+        // Обнаружение DevTools
+        let devtools = {open: false, orientation: null};
+        const threshold = 160;
+        
+        setInterval(function() {
+            if (window.outerHeight - window.innerHeight > threshold || 
+                window.outerWidth - window.innerWidth > threshold) {
+                if (!devtools.open) {
+                    devtools.open = true;
+                    console.clear();
+                    console.log('%cЗащищено от копирования!', 'color: red; font-size: 50px; font-weight: bold;');
+                    console.log('%cЭтот сайт защищен от копирования и изменения!', 'color: red; font-size: 20px;');
+                    // Можно добавить редирект или другие действия
+                    // window.location.href = 'about:blank';
+                }
+            } else {
+                devtools.open = false;
+            }
+        }, 500);
+        
+        // Защита от консоли
+        (function() {
+            const noop = () => {};
+            const methods = ['log', 'debug', 'info', 'warn', 'error', 'assert', 'clear', 'count', 'countReset', 'dir', 'dirxml', 'group', 'groupCollapsed', 'groupEnd', 'table', 'time', 'timeEnd', 'timeLog', 'trace'];
+            methods.forEach(method => {
+                console[method] = noop;
+            });
+        })();
+        
+        // Защита от инспектора элементов
+        Object.defineProperty(window, 'console', {
+            value: {
+                log: function() {},
+                debug: function() {},
+                info: function() {},
+                warn: function() {},
+                error: function() {},
+                assert: function() {},
+                clear: function() {},
+                count: function() {},
+                countReset: function() {},
+                dir: function() {},
+                dirxml: function() {},
+                group: function() {},
+                groupCollapsed: function() {},
+                groupEnd: function() {},
+                table: function() {},
+                time: function() {},
+                timeEnd: function() {},
+                timeLog: function() {},
+                trace: function() {}
+            },
+            writable: false,
+            configurable: false
+        });
+        
+        // Защита от изменения HTML
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'childList') {
+                    // Можно добавить логику для восстановления изменений
+                    console.log('Обнаружена попытка изменения DOM');
+                }
+            });
+        });
+        
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeOldValue: true
+        });
+        
+        // Защита от скриншотов (частично)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'PrintScreen') {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Блокировка горячих клавиш
+        document.addEventListener('keydown', function(e) {
+            // Блокировка Alt+Tab, Win+Tab и других системных комбинаций
+            if (e.altKey || e.metaKey) {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Защита от копирования через буфер обмена
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+                e.preventDefault();
+                return false;
+            }
+        });
+        
+        // Дополнительная защита от DevTools
+        let devtoolsOpen = false;
+        const checkDevTools = setInterval(function() {
+            if (window.outerHeight - window.innerHeight > 200 || 
+                window.outerWidth - window.innerWidth > 200) {
+                if (!devtoolsOpen) {
+                    devtoolsOpen = true;
+                    document.body.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background: #000; color: #fff; font-family: Arial, sans-serif; text-align: center;"><div><h1 style="color: #ff0000;">Доступ запрещен!</h1><p>Этот сайт защищен от копирования и изменения.</p></div></div>';
+                }
+            }
+        }, 100);
+        
+        // Защита от изменения URL
+        window.addEventListener('beforeunload', function(e) {
+            e.preventDefault();
+            e.returnValue = '';
+        });
+        
+        // Защита от изменения title
+        const originalTitle = document.title;
+        setInterval(function() {
+            if (document.title !== originalTitle) {
+                document.title = originalTitle;
+            }
+        }, 100);
+        
+        // Защита от изменения favicon
+        const originalFavicon = document.querySelector('link[rel="icon"]');
+        if (originalFavicon) {
+            setInterval(function() {
+                const currentFavicon = document.querySelector('link[rel="icon"]');
+                if (currentFavicon && currentFavicon.href !== originalFavicon.href) {
+                    currentFavicon.href = originalFavicon.href;
+                }
+            }, 100);
+        }
+    </script>
 </body>
 
-<!-- Mirrored from zetaxity.ru/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Oct 2025 16:48:08 GMT -->
 </html>
